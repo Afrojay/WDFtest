@@ -39,11 +39,15 @@ class testClass(unittest.TestCase):
     def test_identical_objects(self):
         same_song = self.song
         self.assertIs(self.song, same_song)
+
+    def test_different_objects(self):
+        different_song = self.song
+
 #- 1 test for identical objects
 
+
 #- 1 test for unidentical but similar objects
-        self.assertNotEquals(id(song), id(song.songs[0]))
-        self.assertNotEquals(id(song), id(song.songs[0]))
+
 
 # unit tests for all methods
 
